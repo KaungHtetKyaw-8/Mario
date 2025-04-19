@@ -1,5 +1,11 @@
 package jade;
 
+import org.lwjgl.system.CallbackI;
+
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
 import static org.lwjgl.glfw.GLFW.*;
 
 public class KeyListener {
@@ -7,7 +13,11 @@ public class KeyListener {
     private boolean keyPressed[] = new boolean[350];
 
     private KeyListener(){
-
+        HashSet<Integer> i = new HashSet<>();
+        Scanner sc= new Scanner(System.in);
+        sc.next(Pattern.compile(" "));
+        String s = "hell wotl ";
+        int length = s.split("").length;    
     }
 
     public static KeyListener get(){
